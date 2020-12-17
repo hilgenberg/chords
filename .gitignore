@@ -1,0 +1,8 @@
+*.o
+*.gch
+/chords
+__pycache__/
+*.dblite
+*.swp
+*~
+/.vscode/

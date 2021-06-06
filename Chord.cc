@@ -57,7 +57,7 @@ int Chord::parse_note(const char *s)
 	{
 		if      (*s == '#') { ++n; ++s; }
 		else if (*s == 'b') { --n; ++s; }
-		else if (isspace((unsigned char)*s)) {  }
+		else if (isspace((unsigned char)*s)) { ++s; }
 		else if (!strcmp(s, FLAT )) { --n; s += strlen(FLAT ); }
 		else if (!strcmp(s, SHARP)) { --n; s += strlen(SHARP); }
 		else return -1;
